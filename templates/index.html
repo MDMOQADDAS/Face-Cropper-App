@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Face Cropper App</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            border: 25px solid rgb(255, 0, 0);
+        }
+        
+        .home {
+            background-color: rgb(98, 179, 255);
+            height: 100%;
+            padding: 60px 140px;
+            border-bottom: red 10px solid;
+            border-top: green 10px solid;
+        }
+        
+        .header h1 {
+            text-align: center;
+            font-size: 80px;
+            color: rgb(89, 0, 255);
+        }
+        
+        .form {
+            height: 600px;
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        
+        .input {
+            background-color: green;
+            padding: 30px 60px;
+            height: 530px;
+            margin-left: 200px;
+            margin-right: 200px;
+            border-radius: 50px;
+            border: yellow 5px solid;
+        }
+        
+        .name {
+            color: rgb(255, 255, 255);
+            margin: 20px;
+            font-size: 65px;
+        }
+        
+        .email {
+            color: rgb(255, 255, 255);
+            margin: 20px;
+            font-size: 65px;
+        }
+        
+        .message {
+            color: rgb(255, 255, 255);
+            margin: 20px;
+            font-size: 65px;
+        }
+        
+        .n {
+            font-size: 30px;
+        }
+        
+        .e {
+            font-size: 30px;
+        }
+        
+        .m {
+            font-size: 30px;
+        }
+        
+        .submit {
+            color: rgb(255, 255, 255);
+            margin: 20px;
+            font-size: 125px;
+        }
+        
+        .s {
+            font-size: 30px;
+            padding: 16px 32px;
+            background-color: red;
+            border: yellow 5px solid;
+            border-radius: 30px;
+        }
+        
+        .s:hover {
+            background-color: rgb(195, 0, 255);
+            color: white;
+        }
+        
+        .upload {
+            color: rgb(255, 255, 255);
+            margin: 20px;
+            font-size: 60px;
+        }
+        
+        .u {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <div class="header">
+            <h1>Welcome in Face Cropper App!!</h1>
+        </div>
+    </div>
+    <div class="form">
+
+        <div class="input">
+            <form action="/crop" method="POST" enctype="multipart/form-data">
+                <div class="name">
+                    Enter the Name: <input class="n" type="text" name="name">
+                </div>
+                <div class="email">
+                    Enter the Email: <input class="e" type="text" name="email">
+                </div>
+                <div class="message">
+                    Enter the Message: <input class="m" type="text" name="message">
+                </div>
+                <div class="upload">
+                    <input class="u" type="file" name="file">
+                </div>
+                <div class="submit">
+                    <input class="s" type="submit">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
+
+
+<!--<html>
+
+<head>
+    <title>upload</title>
+</head>
+
+<body>
+    <form action="/success" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <input type="submit" value="Upload">
+    </form>
+</body>
+
+</html>-->
